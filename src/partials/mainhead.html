@@ -277,7 +277,7 @@ button {
               if (xhr.status === 401) { // Unauthorized
                   alert("Session expired. Please log in again.");
                   localStorage.removeItem('auth_token');
-                  window.location.href = "/login";
+                  //window.location.href = "/login";
               } else {
                   try {
                       let response = JSON.parse(xhr.responseText);
@@ -330,7 +330,7 @@ button {
             if (xhr.status === 401) { // Unauthorized
                 alert("Session expired. Please log in again.");
                 localStorage.removeItem('auth_token');
-                window.location.href = "/login";
+                //window.location.href = "/login";
             } else {
                 try {
                     let response = JSON.parse(xhr.responseText);
